@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Creates a responsive website since it is sized to 
+                        fit the device loading the content-->
+    <meta charset="UTF-8"> <!-- UTF-8 is the default character set -->
+
+    <head>
+        <title>Madlib Madness</title>
+        <!--icon does not show up since it is hosted on local server-->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    </head>
+
+
+
+    <body style="background-color:rgb(223, 224, 229);">
+        <h1> &#128516; Let's make a madlib! &#128516; </h1>
+        <p>To create a complete story, please fill in the words and press the button</p>
+
+        <form action = "http://localhost:5000/result" method = "POST">
+            <label for="noun">Noun:</label>
+            <input type = "text" name = "noun" required/>
+        <!-- the required attribute will block submission until the field is filled -->
+    
+            <p>Adjective <input type = "text" name = "Adjective"/></p>
+            <p>Verb <input type = "text" name = "Verb"/></p>
+    
+            <p> <input type = "submit" value = "click me!"/></p>
+        </form>
+
+        <img src="/images/Fridge.png" alt=" Poorly drawn turquoise fridge" style="width:472px;height:742px;">
+
+    </body>
+
+</html>
+
