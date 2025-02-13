@@ -1,11 +1,32 @@
-<!doctype html>
-<table border = 1>
-    {% for key, value in result.items() %}
 
-    <tr>
-        <th> {{ key }}</th>
-        <td> {{ value }} </td>
-    </tr>
+<!DOCTYPE html>
+<html>
 
-    {% endfor %}
-</table>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Creates a responsive website since it is sized to 
+                            fit the device loading the content-->
+        <meta charset="UTF-8"> <!-- UTF-8 is the default character set -->
+
+        <title>Madlib Madness</title>
+    </head>
+
+    <body style="background-color:rgb(223, 224, 229);"
+            style="font-family:verdana;">
+        <h1 style="text-align:center;">It's a Great Day!</h1>
+
+        <p><strong>It's a great day to be a </strong></p>
+        
+        <table border = 1>
+            {% for key, value in result.items() %}
+
+            <tr>
+                <th> {{ key }}</th>
+                <td> {{ value }} </td>
+            </tr>
+
+            {% endfor %}
+        </table>
+    </body>
+
+</html>

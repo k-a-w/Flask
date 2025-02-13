@@ -8,9 +8,13 @@
     <head>
         <title>Madlib Madness</title>
         <!--icon does not show up since it is hosted on local server-->
-        <link rel="icon" type="image/x-icon" href="https://github.com/k-a-w/Flask/blob/main/images/Fridge.png">
+        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+        <style>
+            img {
+                object-fit: cover
+            }
+        </style>
     </head>
-
 
 
     <body style="background-color:rgb(223, 224, 229);">
@@ -18,17 +22,25 @@
         <p>To create a complete story, please fill in the words and press the button</p>
 
         <form action = "http://localhost:5000/result" method = "POST">
-            <label for="noun">Noun:</label>
-            <input type = "text" name = "noun" required/>
-        <!-- the required attribute will block submission until the field is filled -->
-    
-            <p>Adjective <input type = "text" name = "Adjective"/></p>
-            <p>Verb <input type = "text" name = "Verb"/></p>
-    
-            <p> <input type = "submit" value = "click me!"/></p>
+            <fieldset>
+                <legend>words</legend>
+                <label for="noun">Noun:</label>
+                <input type="text" id="noun" name="noun" required/>
+            <!-- the required attribute will block submission until the field is filled -->
+        
+                <p>Adjective:<input type = "text" name = "adjective"/></p>
+                <p>Verb:<input type = "text" name = "verb"/></p>
+        
+                <p> <input type = "submit" value = "click me!"/></p>
+
+            </fieldset>
+
+
+            <img src="https://raw.githubusercontent.com/k-a-w/Flask/refs/heads/main/images/Fridge.png" 
+                alt="Poorly drawn turquoise fridge" style="float:right;width:472px;height:742px;">
         </form>
 
-        <img src="https://github.com/k-a-w/Flask/blob/main/images/Fridge.png" alt=" Poorly drawn turquoise fridge" style="width:472px;height:742px;">
+        
 
     </body>
 
